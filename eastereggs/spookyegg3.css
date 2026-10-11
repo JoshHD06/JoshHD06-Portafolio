@@ -1,0 +1,54 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    color: aliceblue;
+
+    animation: parpadeoFondo 0.6s ease-in-out infinite;
+}
+
+.spooky-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.spooky-container h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.spooky-container video {
+    width: 750px;
+    border: 3px solid #ff5500;
+    box-shadow: 0 0 15px #ff5500;
+    border-radius: 8px;
+
+    animation: spookyFlicker 1.5s ease-in-out infinite;
+}
+
+@keyframes spookyFlicker {
+    0% {
+        box-shadow: 0 0 5px rgba(255, 85, 0, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 5px rgba(255, 85, 0, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(255, 85, 0, 0.4);
+    }
+}
+
+@keyframes parpadeoFondo {
+    0%, 100% {
+        background-color: black;
+    }
+    50% {
+        background-color: #ff5500;
+    }
+}
