@@ -1,0 +1,50 @@
+body{
+    background-color: #121212;
+    color: aliceblue;
+}
+
+a {
+    color: rgb(255, 0, 0);
+}
+
+::selection {
+    background-color: #ff5500;
+    color: #000000;
+}
+
+.easteregg-esquina {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 40px;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+.eastereggSmile {
+    color: inherit;
+    text-decoration: none;
+}
+
+.eastereggSmile:hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.GIMP {
+    color: inherit;
+    text-decoration: none;
+}
+
+.ShotCut {
+    color: inherit;
+    text-decoration: none;
+}
+
+.OBS {
+    color: inherit;
+    text-decoration: none;
+}
+
